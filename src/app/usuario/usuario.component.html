@@ -17,10 +17,10 @@
 
       </thead>
       <tbody>
-        <tr>
-          <td>1</td>
-          <td>Mark</td>
-          <td></td>
+        <tr *ngFor="let item of usuarioLista">
+          <td>{{item._id}}</td>
+          <td>{{item.nome}}</td>
+          <td>{{item.cargo}}</td>
           <td>
             <button type="button" class="btn btn-warning ">Editar</button>
             <button type="button" class="btn btn-danger ms-1">Excluir</button>
